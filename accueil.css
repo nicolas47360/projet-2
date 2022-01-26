@@ -3,14 +3,15 @@
 body
 { 
   font-family: "Raleway", sans-serif;
-  margin: 20px 40px 20px 40px;
+  margin-left: 60px;  
 }
 
 /* Header */
 header
 {
    display: flex;
-  justify-content:space-between;  
+  justify-content:space-between;
+  padding: 20px 0 0 20px;  
 }
 
 nav
@@ -44,6 +45,12 @@ a:link
 }
 
 /* presentation*/
+
+#h1
+{
+  margin: 50px 0 0 0;
+  
+}
 
 #presentation
 {
@@ -96,7 +103,7 @@ a:link
 
 .icon
 {
-  width:550px;
+  width:70%;
   display: flex;
   justify-content: space-around;
 }
@@ -104,16 +111,24 @@ a:link
 .selection
 {
   border-style: none;
-  background-color: white; 
-}
+  background-color: white;
+  width: 80%;
+  height: 30px;
+   }
 
 .icon-style
 {
   border-style: solid;
-  border-radius: 10px;
-  border-color: #DEEBFF;
-  background-color: #deebff; 
+  border-radius: 20px;
+  border-color: #f2f2f2;  
   color: #0065FC;
+  width: 20%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
 }
 
 /* info */
