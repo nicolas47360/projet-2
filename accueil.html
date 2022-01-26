@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booki</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel='icon' type="images" href="images/logo/Booki.ico">
+
+    </header>
+
+<body>
+    <div class="header">
+        <img class="logo" src="images/logo/Booki.png" alt="logo du site" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Hébergements</a></li>
+                <li><a href="index.html">Activités</a> </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<section>
+    <div id="best-imdb">
+        <h1 class="title">jMeilleur film</h1>
+        <div class="best-movie">
+            <img id="best-image" src="#" alt="photo de film">
+            <h2 class="best-title" id="best-title"></h2>
+            <p id="best-description"></p>
+        </div>
+        <a href="#modal" class="js-modal" id="btn">Plus d' info</a>
+        <div id="modal" class="modal" aria-hidden="true" role="dialog">
+            <div class="modal-wrapper modal-stop">
+                <button class="modal-close" id="close">X</button>
+                <div id="information"></div>
+            </div>
+        </div>
+        <li><a href="index.html">Activités</a> </li>j
+    </div>
+</section>
+
+<section class="carousel-wrapper">
+
+    <article class="container main">
+        <h2 class="title">Films il vaut mieux se les mieux notés</h2>
+        <div class="js-modal " id="best-score"></div>
+    </article>
+
+    <article class="container animation">
+        <h2 class="title">Animation</h2>
+        <div class="js-modal " id="animation"></div>
+
+    </article>
+
+    <article class="container thriller">
+        <h2 class="title">Thriller</h2>
+        <div class="js-modal" id="thriller"></div>
+    </article>
+
+    <article class="container action">
+        <h2 class="title">Action</h2>
+        <div class="js-modal" id="action"></div>
+    </article>
+</section>
+
+
+</body>
+
+</html>
