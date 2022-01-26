@@ -60,11 +60,14 @@ a:link
 #search-bar
 {  
   border-radius: 10px; 
-  background-color: #DEEBFF;
+  background-color: #f2f2f2;
   height: 40px;
   
 }
-
+.fa-map-marker-alt
+{
+  padding: 1px 0 1px 0;
+}
 #imput
 {
   height: 34px;
