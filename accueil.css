@@ -33,6 +33,7 @@ nav
 #logo
 {
   height: 60px;
+  padding: 20px;
 }
 
 /* main */
@@ -68,6 +69,7 @@ a:link
 {
   padding: 1px 0 1px 0;
 }
+
 #imput
 {
   height: 34px;
