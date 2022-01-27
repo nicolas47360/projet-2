@@ -17,8 +17,8 @@
         <nav>
             <img id="logo" src="images/logo/Booki.png" alt="logo du site" />
             <ul id="link">
-                <li><a href="test.html">Hébergements</a></li>
-                <li><a href="test.html">Activités</a></li>
+                <li><a href="#visual">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -30,11 +30,10 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-            <div>
-                <i id="search-bar" id="color-bar" class="fas fa-map-marker-alt">
-                    <input id="imput" type="text">
-                    <button id="submit" type="submit">Rechercher</button>
-                </i>
+            <div id="bar">
+                <i id="search-bar" id="color-bar" class="fas fa-map-marker-alt"></i>
+                <input id="imput" type="text">
+                <button id="submit" type="submit">Rechercher</button>
             </div>
         </section>
 
@@ -42,11 +41,24 @@
             <h2>Filtres</h2>
 
             <div class="icon">
-                <i class="fas fa-money-bill-wave icon-style"><button class="selection"
-                        type="submit">Économique</button></i>
-                <i class="fas fa-child icon-style"><button class="selection" type="submit">Familial</button></i>
-                <i class="fas fa-heart icon-style"><button class="selection" type="submit">Romantique</button></i>
-                <i class="fas fa-dog icon-style"><button class="selection" type="submit">Animaux autorisés</button></i>
+                <div class="filter-container">
+                    <i class="fas fa-money-bill-wave icon-style"></i>
+                    <button class="selection" type="submit">Économique</button>
+                </div>
+                <div class="filter-container">
+                    <i class="fas fa-child icon-style"></i>
+                    <button class="selection" type="submit">Familial</button>
+                </div>
+                <div class="filter-container">
+                    <i class="fas fa-heart icon-style"></i>
+                    <button class="selection" type="submit">Romantique</button>
+                </div>
+                <div class="filter-container">
+                    <i class="fas fa-dog icon-style"></i>
+                    <button class="selection" type="submit">Animaux autorisés</button>
+                </div>
+
+
             </div>
         </section>
 
@@ -55,7 +67,7 @@
             <p>Plus de 500 logements sont disponibles</p>
         </section>
 
-        <section class="conteneur">
+        <section class="container">
             <article id="visual">
                 <section id="picture">
                     <h2 id="title">Hébergements à Marseille</h2>
@@ -63,7 +75,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="">
-                            <div>
+                            <div class="text">
                                 <h3>Auberge de La Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
                                 <div class="rate">
@@ -79,7 +91,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="">
-                            <div>
+                            <div class="text">
                                 <h2>Hôtel du port</h2>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="rate">
@@ -95,7 +107,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="photo">
-                            <div>
+                            <div class="text">
                                 <h2>Hôtel les mouettes</h2>
                                 <p>Nuit à partir de 76€</p>
                                 <div class="rate">
@@ -113,7 +125,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="">
-                            <div>
+                            <div class="text">
                                 <h2>Hôtel de la mer</h2>
                                 <p>Nuit à partir de 46€</p>
                                 <div class="rate">
@@ -129,7 +141,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="">
-                            <div>
+                            <div class="text">
                                 <h2>Auberge Le Panier</h2>
                                 <p>Nuit à partir de 23€</p>
                                 <div class="rate">
@@ -145,7 +157,7 @@
                         <div class="hotel">
                             <img class="picture" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="">
-                            <div>
+                            <div class="text">
                                 <h2>Hôtel chez Amina</h2>
                                 <p>Nuit à partir de 96€</p>
                                 <div class="rate">
@@ -159,7 +171,7 @@
                         </div>
                     </section>
                     <div id="more">
-                        <a href="index.html">Afficher plus</a>
+                        <a id="more-link" href="#">Afficher plus</a>
                     </div>
                 </section>
 
@@ -172,7 +184,7 @@
 
                         <section>
                             <div class="windows">
-                                <img class="picture"
+                                <img class="most-picture"
                                     src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                                 <div class="text">
                                     <h3>Hôtel Le soleil du matin</h3>
@@ -188,7 +200,7 @@
                             </div>
 
                             <div class="windows">
-                                <img class="picture"
+                                <img class="most-picture"
                                     src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                                 <div class="text">
                                     <h3>Hôtel Le soleil du matin</h3>
@@ -204,10 +216,10 @@
                             </div>
 
                             <div class="windows">
-                                <img class="picture"
+                                <img class="most-picture"
                                     src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                                 <div class="text">
-                                    <h3>Hôtem Le soleil du matin</h3>
+                                    <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de 128€</p>
                                     <div class="rate">
                                         <i class="far fa-star"></i>
