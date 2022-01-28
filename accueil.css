@@ -3,7 +3,8 @@
 body
 { 
   font-family: "Raleway", sans-serif;
-  margin: 0 60px 0 60px;  
+  cursor: pointer;
+  margin: 0;  
 }
 
 /* Header */
@@ -11,7 +12,8 @@ header
 {
    display: flex;
   justify-content:space-between;
-  padding: 20px 0 0 20px;  
+  padding: 20px 40px 0 20px;
+  margin: 0 0 0 40px;  
 }
 
 nav
@@ -40,6 +42,11 @@ nav
 
 /* main */
 
+main
+{
+  margin: 0 45px 0 45px;
+}
+
 a:link
 {
   text-decoration: none;
@@ -48,21 +55,10 @@ a:link
 
 /* presentation*/
 
-#bar
-{ 
-  display: flex;
-}
-
-#h1
-{
-  margin: 50px 0 0 0;
-  
-}
-
 #presentation
 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;   
 }
 
 #search
@@ -72,12 +68,23 @@ a:link
     
 }
 
+#h1
+{
+  margin: 50px 0 0 0;  
+}
+
+#bar
+{ 
+  display: flex;  
+}
+
+
 #search-bar
 {  
   border-radius: 10px 0 0 10px; 
   background-color: #f2f2f2;
   height: 40px;
-  width: 50px;
+  width: 40px;
   
 }
 .fa-map-marker-alt
@@ -88,11 +95,12 @@ a:link
   justify-content: center;
 }
 
-#imput
+#input
 {
   height: 34px;
   border-color: #DEEBFF;
 }
+
 #submit
 {
   background-color: #0065FC;
@@ -100,7 +108,9 @@ a:link
   height: 40px;
   border-radius: 0 10px 10px 0;
   color: white;
-  width: 120px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
   
 }
 
@@ -109,9 +119,21 @@ a:link
 #filter
 {  
   display: flex;
-  align-items: center;
-  margin-top: 20px;
-  justify-content: flex-start; 
+  align-items: center;  
+  justify-content: flex-start;
+  margin-top: 30px ;  
+}
+
+#h2
+{
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.icon
+{
+  width:100%;
+  display: flex;  
 }
 
 .filter-container
@@ -120,28 +142,11 @@ a:link
   flex-direction: row;
   border-style: solid;
   border-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 60px;
+  margin: 0 10px 0 20px;
+  max-width: 250px;
+  height: 45px;
 }
-
-.icon
-{
-  width:70%;
-  display: flex;
-  justify-content: space-around;
-  
-}
-
-.selection
-{
-  border-style: none;
-  background-color: white;  
-  width: 180px;
-  height: 30px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-   }
 
 .icon-style
 {
@@ -149,14 +154,26 @@ a:link
   border-radius: 20px 20px 20px 20px;
   border-color: #f2f2f2;  
   color: #0065FC;
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 42px;
   display: flex;
   flex-direction: row; 
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
-  padding: 0;
+  background-color: #f2f2f2;  
+}
+
+.selection
+{
+  border-style: none;
+  background-color: white;  
+  width: 100%;  
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0 10px 0 10px;  
 }
 
 /* info */
@@ -165,7 +182,7 @@ a:link
 {
   display: flex;
   flex-direction: row;
-  margin: 20px 20px 20px 20px;
+  margin-top: 30px ;
 }
 
 .fa-info
@@ -186,29 +203,11 @@ a:link
 
 /* container */
 
-#title
-{
-  margin: 20px;
-}
-
-#more
-{
-  margin: 20px;
-  padding-top: 20px;
-}
-
-#more-link
-{
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-
 .container
 {
   width: 100%;
-  display: flex;       
+  display: flex;
+  margin-top: 40px ;  
 }
 
 #visual
@@ -216,19 +215,6 @@ a:link
   display: flex;
   width: 100%;    
 }
-
-#popular
-{
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  padding: 10px 10px 10px 10px;
-}
-
-.most-popular
-{
- margin: 20px 20px 20px 20px;
- }
-
 
 #picture
 {
@@ -241,17 +227,15 @@ a:link
   object-fit: cover;
 }
 
+#title
+{
+  margin: 20px;
+}
 
 #first-conteneur
 {
   display: flex;
   flex-direction: row; 
-}
-
-#second-conteneur
-{
-  display: flex;
-  flex-direction:row;  
 }
 
 .hotel
@@ -268,7 +252,38 @@ a:link
 
 }
 
-#most
+.picture
+{
+  border-radius: 20px 20px 0 0 ;
+  width: 100%;
+       
+}
+
+.container-text
+{
+  background-color: white;
+  width: 100%;
+}
+
+#second-conteneur
+{
+  display: flex;
+  flex-direction:row;  
+}
+
+#popular
+{
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.most-popular
+{
+ margin: 20px 20px 20px 20px;
+ }
+
+ #most
 {
   width: 100%;
   display: flex;
@@ -276,14 +291,15 @@ a:link
   justify-content: space-between;
 }
 
-.popular-hotel
-{
-  display: flex;
-  flex-direction: row;
-}
 .fa-chart-line
 {
   padding-top: 25px;
+}
+
+#section
+{
+  display: flex;
+  flex-direction: column;  
 }
 
 .windows
@@ -298,29 +314,12 @@ a:link
  justify-content: space-around; 
 }
 
-.picture
-{
-  border-radius: 20px 20px 0 0 ;
-  width: 100%;
-       
-}
-
-#section
-{
-  display: flex;
-  flex-direction: column;  
-}
-
 .most-picture
 {
   width: 100%;
-  height:100%
-}
-
-.container-text
-{
-  background-color: white;
-  width: 100%;
+  height:100%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
 }
 
 /* avtivity */
@@ -339,21 +338,6 @@ a:link
   flex-direction: row;
 }
 
-.two-picture
-{
-  display: flex;
-  flex-direction: column;
-  border: inherit #f2f2f2;
-  border-radius: 20px 20px 20px 20px;
-  margin: 40px 40px 40px 40px; 
-}
-
-.activity-picture
-{
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
-
 .picture-container
 {
   border-color: #DEEBFF;
@@ -361,6 +345,12 @@ a:link
   border-style: solid;  
   margin: 40px 40px 40px 40px;  
   object-fit: cover;
+}
+
+.activity-picture
+{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .pictute-container-two
@@ -372,13 +362,14 @@ a:link
   object-fit: cover;
 }
 
-
-.most-picture
+.two-picture
 {
-  border-radius: 20px 0 0 20px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  border: inherit #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  margin: 40px 40px 40px 40px; 
 }
-
 
 /* footer*/
 
@@ -387,7 +378,7 @@ a:link
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 20px 0 0 0 ;
+  
   width: 100%;
   background-color: #f2f2f2;
 }
