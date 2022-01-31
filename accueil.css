@@ -7,6 +7,7 @@ body
   margin: 0;  
 }
 
+
 /* Header */
 header
 {
@@ -45,6 +46,15 @@ nav
 padding-right: 60px;
 }
 
+.contact a:hover
+{
+  padding-top: 30px;
+  border: top;
+  border-color: #0065FC;
+  border-top-style: solid;
+}
+
+
 /* main */
 
 main
@@ -54,7 +64,9 @@ main
 
 a:link
 {
-  text-decoration: none;
+  text-decoration: solid;
+  border: top;
+  border-color: #0065FC;
   color:black
 }
 
@@ -97,6 +109,7 @@ a:link
   width: 50px;
   
 }
+
 .fa-map-marker-alt
 {
   padding: 1px 0 1px 0;
@@ -104,6 +117,12 @@ a:link
   display: flex;
   justify-content: center;
   font-size: 21px;
+  color: black;
+}
+
+.fa-search
+{
+  display: none;
 }
 
 #input
@@ -232,7 +251,7 @@ a:link
   width: 100%;    
 }
 
-.fas 
+.color-star
 {
   color: #0065FC;
 }
@@ -547,11 +566,18 @@ padding: 0 10px 0 30px;
 
   a:link
   {
-    text-decoration: none;
+    text-decoration: solid;
     color:black;    
   }
   
-  
+  .contact a:hover
+{
+  padding-bottom: 20px;
+  border: bottom;
+  border-color: #0065FC;
+  border-bottom-style: solid;
+}
+
   /* presentation*/
   
   #presentation
@@ -582,7 +608,9 @@ padding: 0 10px 0 30px;
   
   #bar
   { 
-    display: flex;    
+    display: flex;
+    justify-content: center;
+      
   }
   
   #search-bar
@@ -601,8 +629,15 @@ padding: 0 10px 0 30px;
     display: flex;
     justify-content: center;
     font-size: 21px;
+    color: black;
   }
   
+  .fa-search
+  {
+    color:white;
+    font-size: 25px;    
+  }
+
   #input
   {
     height:46px;
@@ -615,18 +650,17 @@ padding: 0 10px 0 30px;
     background-color: #0065FC;
     border-style: none;
     height: 52px;
-    border-radius: 0 20px 20px 0;
-    color: white;
-    width: 150px;
+    border-radius: 10px;    
+    width: 50px;
     font-weight: bold;
-    font-size: 20px;
-    
+    font-size: 0px;    
   }
   
   /* filter */
   
   #filter
-  { width: 100%; 
+  { 
+    width: 100%; 
     display: flex;
     flex-direction: column;      
     margin: 0 20px 0 20px;
@@ -730,10 +764,11 @@ padding: 0 10px 0 30px;
     width: 100%;    
   }
   
-  .fas 
+  .color-star
   {
     color: #0065FC;
   }
+
   /* section picture */
   
   #picture
