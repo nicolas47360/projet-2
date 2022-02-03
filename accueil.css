@@ -101,23 +101,17 @@ a:link
   display: flex;
 }
 
-#search-bar
-{  
-  border-radius: 20px 0 0 20px; 
-  background-color: #f2f2f2;
-  height: 60px;
-  width: 50px;
-  
-}
+
 
 .fa-map-marker-alt
 {
-  padding: 1px 0 1px 0;
+  padding: 1px 8px 1px 8px;
   align-items: center;
   display: flex;
   justify-content: center;
   font-size: 21px;
   color: black;
+  
 }
 
 .fa-search
@@ -137,11 +131,13 @@ a:link
   background-color: #0065FC;
   border-style: none;
   height: 62px;
-  border-radius: 0 20px 20px 0;
+  border-radius:20px;
   color: white;
-  width: 150px;
+  width: 380px;
   font-weight: bold;
   font-size: 20px;
+  display: flex;
+  align-items: center;
   
 }
 
@@ -185,22 +181,23 @@ a:link
   border-radius: 40px;
   border-color: #f2f2f2;  
   color: #0065FC;
-  width: 35px;
+  width: 45px;
   display: flex;
   flex-direction: row; 
   align-items: center;  
   background-color: #DEEBFF;
   font-size: 25px;
-  height: 55px;
+  height: 35px;
   margin-right: 10px;
-  padding-left: 7px;
+  justify-content: center;
+  margin: -3px 6px -3px -3px;
+  
 }
 
 .selection
-{
-  border-style: none;
+{  
   background-color: white;  
-  width: 100%;  
+  max-width: 3000px;  
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -208,6 +205,11 @@ a:link
   font-size: 21px;
   padding-left: 0;
   margin-right: 10px;
+  border:#f2f2f2;
+  border-style: solid;
+  border-radius: 20px;
+  padding: -2px;
+
    
 }
 
