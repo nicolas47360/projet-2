@@ -114,6 +114,7 @@ a:link
   margin: -1px -1px -1px -8px;
   width: 32px;
   padding-top: 5px;
+  justify-content: center;
   
   
 }
@@ -166,23 +167,9 @@ a:link
   display: flex;  
 }
 
-.filter-container
-{
-  display: flex;
-  flex-direction: row;
-  border-style: solid;
-  border-color: #f2f2f2;
-  border-radius: 60px;
-  margin: 0 10px 0 20px;
-  max-width: 350px;
-  height: 55px;
-}
-
 .icon-style
-{
-  border-style: solid;
-  border-radius: 40px;
-  border-color: #f2f2f2;  
+{  
+  border-radius: 40px;   
   color: #0065FC;
   width: 45px;
   display: flex;
@@ -191,9 +178,8 @@ a:link
   background-color: #DEEBFF;
   font-size: 25px;
   height: 45px;
-  padding-top: 14px;
-  margin: -4px 10px -4px -4px;
-  
+  justify-content: center;
+  margin: -4px 10px -4px -4px;  
 }
 
 .selection
@@ -209,9 +195,7 @@ a:link
   border:#f2f2f2;
   border-style: solid;
   border-radius: 40px;
-  padding: -2px;
-
-   
+  padding-right: 15px;   
 }
 
 /* info */
@@ -1202,8 +1186,8 @@ padding: 0 10px 0 30px;
     width: 100%; 
     display: flex;
     flex-direction: column;      
-    margin: 0 20px 0 20px;
-    margin-top: 30px ;  
+    margin: 30 20px 0 20px;
+    
   }
   
   #h2
@@ -1219,7 +1203,7 @@ padding: 0 10px 0 30px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 300px;  
+     
   }  
 
   .icon-style
@@ -1227,15 +1211,17 @@ padding: 0 10px 0 30px;
     border-style: none;
     border-radius: 30px;      
     color: #0065FC;
-    width: 30px;
-    height: 30px;
+    width: 305x;
+    height: 25px;
     display: flex;
     flex-direction: row; 
     align-items: center;    
     background-color: #DEEBFF;
     font-size: 14px;
     margin: 0 10px 0 0;
-    padding-top: 13px;
+    justify-content: center;
+    padding-bottom: 12px;
+    margin: -2px 10px -2px -5px ;
   }
   
   .selection
@@ -1248,7 +1234,7 @@ padding: 0 10px 0 30px;
     font-size: 17px;
     justify-content: center;
     align-items: center;
-    padding:0; 
+    padding-right: 15px; 
     border: #f2f2f2 solid;
     border-radius: 40px;
     margin-top: 15px;       
@@ -1396,7 +1382,8 @@ padding: 0 10px 0 30px;
   /* section popular */
   
   #popular
-  {
+  { 
+    width: 100%;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
@@ -1405,6 +1392,7 @@ padding: 0 10px 0 30px;
   
   .most-popular
   {
+   width: 100%;
    margin: 20px 20px 20px 20px;
    }
   
@@ -1426,7 +1414,8 @@ padding: 0 10px 0 30px;
   #section
   {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    width: 100%;  
   }
   
   .windows
