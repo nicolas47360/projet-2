@@ -1174,7 +1174,8 @@ padding: 0 10px 0 30px;
     font-size: 20px;
     display: flex;
     margin: 0;
-    width: 100%;          
+    width: 100%;
+    text-decoration: none;          
   }
   
   /* filter */
