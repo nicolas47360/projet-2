@@ -48,11 +48,10 @@ padding-right: 60px;
 
 .contact a:hover
 {
-  padding-top: 30px;
-  border: top;
-  border-color: #0065FC;
-  border-top-style: solid;
   color: #0065FC;
+  padding-top: 30px;  
+  border-color: #0065FC;
+  border-top-style: solid;  
 }
 
 
@@ -65,8 +64,7 @@ main
 
 a:link
 {
-  text-decoration: solid;
-  border: top;
+  text-decoration: solid;  
   border-color: #0065FC;
   color:black
 }
@@ -213,8 +211,7 @@ a:link
 }
 
 .fa-info
-{
-  background-color: none;
+{  
   align-items: center;
   justify-content: center;
   display: flex;
@@ -513,6 +510,11 @@ padding: 0 10px 0 30px;
 {
   padding: 5px 0 5px 0;
 }
+
+.title-footer
+{
+  margin-left: 40px;
+}
 }
 
 @media(max-width:992px) 
@@ -566,8 +568,7 @@ padding: 0 10px 0 30px;
   
   .contact a:hover
   {
-    padding-top: 30px;
-    border: top;
+    padding-top: 30px;    
     border-color: #0065FC;
     border-top-style: solid;
     color: #0065FC;
@@ -583,8 +584,7 @@ padding: 0 10px 0 30px;
   
   a:link
   {
-    text-decoration: solid;
-    border: top;
+    text-decoration: solid;    
     border-color: #0065FC;
     color:black
   }
@@ -731,8 +731,7 @@ padding: 0 10px 0 30px;
   }
   
   .fa-info
-  {
-    background-color: none;
+  {    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -1023,10 +1022,16 @@ padding: 0 10px 0 30px;
     margin: 40px 0 40px 0;
     
   }
+  .title-footer
+{
+  margin-left: 40px;
+}
+
   .list
   {
     list-style: none;  
   }
+
   .footer-link
   {
     padding: 5px 0 5px 0;
@@ -1090,8 +1095,7 @@ padding: 0 10px 0 30px;
   
   .contact a:hover
 {
-  padding-bottom: 20px;
-  border: bottom;
+  padding-bottom: 20px;  
   border-color: #0065FC;
   border-bottom-style: solid;
   border-top: none;
@@ -1153,7 +1157,7 @@ padding: 0 10px 0 30px;
     border-radius: 20px 0 0 20px ;
     height: 100%;
     margin: -1px -1px -1px -8px;
-    width: 35 px;
+    width: 35px;
       }
   
   .fa-search
@@ -1211,8 +1215,7 @@ padding: 0 10px 0 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
-     
+    flex-wrap: wrap;     
   }  
 
   .icon-style
@@ -1220,16 +1223,14 @@ padding: 0 10px 0 30px;
     border-style: none;
     border-radius: 30px;      
     color: #0065FC;
-    width: 305x;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     display: flex;
     flex-direction: row; 
     align-items: center;    
     background-color: #DEEBFF;
-    font-size: 14px;
-    margin: 0 10px 0 0;
-    justify-content: center;
-    padding-bottom: 12px;
+    font-size: 14px;    
+    justify-content: center;    
     margin: -2px 10px -2px -5px ;
   }
   
@@ -1246,7 +1247,8 @@ padding: 0 10px 0 30px;
     padding-right: 15px; 
     border: #f2f2f2 solid;
     border-radius: 40px;
-    margin-top: 15px;       
+    margin-top: 15px;
+    height: 45px;       
   }
   
   /* info */
@@ -1260,8 +1262,7 @@ padding: 0 10px 0 30px;
   
   .fa-info
   {
-    font-size: 12px;
-    background-color: none;
+    font-size: 12px;    
     align-items: center;
     justify-content: center;
     display: flex;
