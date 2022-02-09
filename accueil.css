@@ -9,6 +9,10 @@ body
   margin: 0;   
 }
 
+h3 p
+{
+  color: black;
+}
 
 /* Header */
 header
@@ -501,6 +505,12 @@ padding: 0 10px 0 30px;
   margin: 40px 0 40px 0;
   
 }
+
+.list li a
+{
+  color: black;
+}
+
 .list
 {
   list-style: none;  
@@ -528,6 +538,10 @@ padding: 0 10px 0 30px;
     flex-direction: column  
   }
   
+  h3 p
+{
+  color: black;
+}
   
   /* Header */
   header
@@ -1039,6 +1053,10 @@ padding: 0 10px 0 30px;
   margin-left: 40px;
 }
 
+.list li a
+{
+  color: black;
+}
   .list
   {
     list-style: none;  
@@ -1057,6 +1075,11 @@ padding: 0 10px 0 30px;
     font-family: "Raleway", sans-serif;         
   }
   
+  h3 p
+{
+  color: black;
+}
+
   /* Header */
   header
   {
@@ -1582,6 +1605,11 @@ padding: 0 10px 0 30px;
     margin:  0;
     
   }
+  .list li a
+{
+  color: black;
+}
+
   .list
   {
     list-style: none;
