@@ -3,8 +3,11 @@
 body
 { 
   font-family: "Raleway", sans-serif;
-  cursor: pointer;
-  margin: 0;  
+  cursor: pointer; 
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;   
 }
 
 
@@ -13,15 +16,15 @@ header
 {
    display: flex;
   justify-content:space-between;
-  padding: 20px 10px 0 20px;
-  margin: 0 0 0 40px;  
+  padding-left: 40px;
+  
 }
 
 nav
 {
-  display:flex;
-  width: 100%;
-  justify-content: space-between;  
+  display:flex;  
+  justify-content: space-between;
+  width: 95%;  
 }
 
 #logo
@@ -57,10 +60,6 @@ padding-right: 60px;
 
 /* main */
 
-main
-{
-  margin: 0 45px 0 45px;
-}
 
 a:link
 {
@@ -74,18 +73,19 @@ a:link
 #presentation
 {
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
+  padding-left: 40px;   
 }
 
 #search
 {
   display: flex;
-  flex-direction: column;
-    
+  flex-direction: column;      
 }
 
 #h1
 {
+  display: flex;
   margin: 50px 0 0 0;  
 }
 
@@ -106,8 +106,7 @@ a:link
   display: flex;
   font-size: 21px;
   color: black;
-  background-color: #f2f2f2;
-  height: 100%;
+  background-color: #f2f2f2;  
   border-radius: 20px 0 0 20px;
   margin:0;
   width: 32px;
@@ -126,6 +125,7 @@ a:link
 {
   height: 62px;
 }
+
 #input
 {
   height:56px;
@@ -155,13 +155,14 @@ a:link
   display: flex;
   align-items: center;  
   justify-content: flex-start;
-  margin-top: 30px ;  
+  margin-top: 30px ;
+  padding-left: 40px;  
 }
 
 #h2
 {
   font-size: 21px;
-  margin-right: 20px;
+  margin-right: 75px;
 }
 
 .icon
@@ -194,11 +195,11 @@ a:link
   align-items: center;
   flex-direction: row;  
   font-size: 21px;  
-  margin-right: 30px;
+  margin-right: 50px;
   border:#f2f2f2;
   border-style: solid;
   border-radius: 40px;
-  padding-right: 15px;   
+  padding-right: 20px;   
 }
 
 /* info */
@@ -208,6 +209,7 @@ a:link
   display: flex;
   flex-direction: row;
   margin-top: 30px ;
+  padding-left: 40px;
 }
 
 .fa-info
@@ -232,15 +234,16 @@ a:link
 
 .container
 {
-  width: 100%;
+  
   display: flex;
-  margin-top: 40px ;  
+  margin-top: 40px; 
 }
 
 #visual
 {
   display: flex;
-  width: 100%;    
+  padding:  0 40px 0 40px;
+    
 }
 
 .color-star
@@ -257,8 +260,7 @@ a:link
   margin: 0 20px 0 0;
   background-color: #f2f2f2;
   border-radius: 40px;
-  max-width: 70%;
-  
+  max-width: 70%;  
 }
 
 #title
@@ -272,19 +274,19 @@ a:link
   flex-wrap: wrap; 
   height: 100%;
   justify-content: space-around;
-  margin: 0 40px 0 40px;    
+  padding: 0 30px 0 30px;   
 }
 
 .hotel
 { 
   display: flex;
   flex-wrap: wrap;  
-  border-radius: 20px;
-  border-style: none;
-  padding: 6px;
+  border-radius: 20px; 
   background-color: white;
   margin-bottom: 30px; 
-  width: 30%;         
+  width: 30%; 
+  box-shadow: 0 5px 5px 5px #f2f2f2;
+         
 }
 
 .picture
@@ -300,8 +302,7 @@ a:link
   display: flex;
   background-color: white;
   flex-direction: column;
-  margin-left: 10px;
-  width: 100%;
+  margin-left: 10px;  
   font-size: 18px;   
 }
 
@@ -340,14 +341,14 @@ a:link
 #popular
 {
   background-color: #f2f2f2;
-  border-radius: 20px;
-  padding: 10px 10px 10px 10px;
+  border-radius: 40px;
+  padding: 10px;
   max-width: 30%;
 }
 
 .most-popular
 {
- margin: 20px 20px 20px 20px;
+ margin: 20px;
  }
 
  #most
@@ -403,18 +404,18 @@ padding: 0 10px 0 30px;
 /* avtivity */
 
 #activity
-{
-  width:100%;
+{  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 80px 0 80px 0; 
+  margin: 80px 40px 80px 40px; 
    
 }
 
 #activity-title
 {
   margin: 0 0 40px 0 ;
+  width: 50%;
 }
 
 #marseille
@@ -425,10 +426,8 @@ padding: 0 10px 0 30px;
 
 .activity-container
 {
-  border-radius: 20px;
-  border-style: inset;  
-  border-color: #f2f2f2;  
-  border-width: 3px;    
+  border-radius: 20px; 
+  box-shadow: 0 5px 5px 5px #f2f2f2;;     
 }
 
 
@@ -437,6 +436,7 @@ padding: 0 10px 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .activity-picture
@@ -458,30 +458,29 @@ padding: 0 10px 0 30px;
 {
   display: flex;
   flex-direction: column;
-  border: inset #f2f2f2;
+  box-shadow: 0 5px 5px 5px #f2f2f2; 
   border-radius: 20px;
   height:64%;
-  border-width: 3px;
+  
 }
 
 #two-picture-2
 {
   display: flex;
   flex-direction: column;
-  border: inset #f2f2f2;
+  box-shadow: 0 5px 5px 5px #f2f2f2; 
   border-radius: 20px;
   height:25%;
-  border-width: 3px;
+  
 }
 
 .two-picture
 {
   display: flex;
   flex-direction: column;
-  border: inset #f2f2f2;
+  box-shadow: 0 5px 5px 5px #f2f2f2; 
   border-radius: 20px;
-  height:45%;
-  border-width: 3px;     
+  height:45%;      
 }
 
 /* footer*/
@@ -491,9 +490,9 @@ padding: 0 10px 0 30px;
 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
-  width: 100%;
-  background-color: #f2f2f2;  
+  justify-content: space-between;   
+  background-color: #f2f2f2; 
+  margin: 0; 
   }
 
 .footer-container
@@ -524,7 +523,10 @@ padding: 0 10px 0 30px;
   { 
     font-family: "Raleway", sans-serif;
     cursor: pointer;
-    margin: 0;  
+    margin: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column  
   }
   
   
@@ -533,21 +535,20 @@ padding: 0 10px 0 30px;
   {
      display: flex;
     justify-content:space-between;
-    padding: 20px 10px 0 20px;
-    margin: 0 0 0 40px;  
+    padding-left: 40px;
   }
   
   nav
   {
-    display:flex;
-    width: 100%;
-    justify-content: space-between;  
+    display:flex;  
+    justify-content: space-between;
+    width: 90%;  
   }
   
   #logo
   {
     height: 60px;
-    padding: 20px;
+    padding: 20px 180px 20px 20px;
     width: 130px;
   }
   
@@ -577,10 +578,7 @@ padding: 0 10px 0 30px;
   
   /* main */
   
-  main
-  {
-    margin: 0 45px 0 45px;
-  }
+  
   
   a:link
   {
@@ -594,7 +592,8 @@ padding: 0 10px 0 30px;
   #presentation
   {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    padding-left: 40px;  
   }
   
   #search
@@ -606,6 +605,7 @@ padding: 0 10px 0 30px;
   
   #h1
   {
+    display: flex;
     margin: 50px 0 0 0;  
   }
   
@@ -646,6 +646,7 @@ padding: 0 10px 0 30px;
   {
     height: 62px;
   }
+
   #input
   {
     height:56px;
@@ -674,17 +675,16 @@ padding: 0 10px 0 30px;
   {  
     display: flex;
     align-items: center;  
-    justify-content: flex-start;
+    justify-content: space-around;
     margin-top: 30px ;
     flex-direction: column;
-    width: 100%;
+    padding-left: 40px;
      
   }
   
   #h2
   {
-    font-size: 21px;
-    margin-right: 20px;
+    font-size: 21px;   
   }
   
   .icon
@@ -722,7 +722,7 @@ padding: 0 10px 0 30px;
     border:#f2f2f2;
     border-style: solid;
     border-radius: 40px;
-    padding-right: 15px;   
+    padding-right: 40px;   
   }
   
   /* info */
@@ -732,6 +732,7 @@ padding: 0 10px 0 30px;
     display: flex;
     flex-direction: row;
     margin-top: 30px ;
+    padding-left: 40px;
   }
   
   .fa-info
@@ -755,8 +756,7 @@ padding: 0 10px 0 30px;
   /* container */
   
   .container
-  {
-    width: 100%;
+  {    
     display: flex;
     margin-top: 40px ;
       
@@ -764,8 +764,7 @@ padding: 0 10px 0 30px;
   
   #visual
   {
-    display: flex;
-    width: 100%;
+    display: flex;    
     flex-direction: column;    
   }
   
@@ -789,7 +788,9 @@ padding: 0 10px 0 30px;
   
   #title
   {
-    margin: 40px 40px 40px 60px;
+    display: flex;
+    margin: 40px 0 40px 0;
+    justify-content: center;
   }
   
   .picture-container
@@ -798,7 +799,7 @@ padding: 0 10px 0 30px;
     flex-wrap: wrap; 
     height: 100%;
     justify-content: space-around;
-    margin: 0 40px 0 40px;    
+        
   }
   
   .hotel
@@ -810,7 +811,8 @@ padding: 0 10px 0 30px;
     padding: 6px;
     background-color: white;
     margin-bottom: 30px; 
-    width: 30%;         
+    width: 30%;
+    box-shadow: 0 5px 5px 5px #f2f2f2;         
   }
   
   .picture
@@ -874,7 +876,7 @@ padding: 0 10px 0 30px;
   
   .most-popular
   {
-   margin: 20px 20px 20px 20px;
+   margin: 20px;
    }
   
    #most
@@ -931,7 +933,6 @@ padding: 0 10px 0 30px;
   
   #activity
   {
-    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -941,21 +942,25 @@ padding: 0 10px 0 30px;
   
   #activity-title
   {
-    margin: 0 0 40px 0 ;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;  
   }
   
   #marseille
   {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   
   .activity-container
   {
     border-radius: 20px;
-    border-style: inset;  
-    border-color: #f2f2f2;  
-    border-width: 3px;    
+    box-shadow: 0 5px 5px 5px #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    margin:20px;
   }
   
   
@@ -964,16 +969,17 @@ padding: 0 10px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 0 10px 0;
+    
   }
   
   .activity-picture
   {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    height: 90%;
-    border-style: none;
-    max-width: 380px;
+    max-width: none;
+    border-radius: 20px 20px 0 0;    
+    border-style: none;    
     object-fit: cover;
+    max-height: 300px;
   }
   
   .bottom-title
@@ -985,30 +991,28 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
+    box-shadow: 0 5px 5px 5px #f2f2f2;  
+    margin: 20px;
     border-radius: 20px;
-    height:64%;
-    border-width: 3px;
   }
   
   #two-picture-2
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
-    border-radius: 20px;
-    height:25%;
-    border-width: 3px;
+    box-shadow: 0 5px 5px 5px #f2f2f2;
+    border-radius: 20px;    
+    margin: 20px;    
   }
   
   .two-picture
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
+    box-shadow: 0 5px 5px 5px #f2f2f2;
     border-radius: 20px;
-    height:45%;
-    border-width: 3px;     
+    margin: 20px;
+      
   }
   
   /* footer*/
@@ -1051,7 +1055,7 @@ padding: 0 10px 0 30px;
   { 
     font-family: "Raleway", sans-serif;
     cursor: pointer;    
-    margin: 2px;      
+         
   }
   
   /* Header */
@@ -1060,7 +1064,8 @@ padding: 0 10px 0 30px;
     display: flex;    
     flex-direction: column;    
     margin-top: 20px;     
-    align-items: center;    
+    align-items: center; 
+    padding: 0;   
   }
   
   nav
@@ -1073,26 +1078,28 @@ padding: 0 10px 0 30px;
   
   #logo
   {
+    display: flex;
     height: 50px;    
     width: 100px;
+    padding: 0;
+    justify-content: center;
   }
   
   #link
   { 
     list-style: none;
     flex-direction: row;
-    display: flex;
-    width: 90%;
+    display: flex;   
     justify-content: space-around;
-    margin: 40px 40px 0 0;     
+    margin-top: 40px;
+    padding: 0;
+    width: 100%;
   }
 
      
   /* main */  
  
-  main{
-    margin: 0;
-  }
+ 
 
   a:link
   {
@@ -1114,35 +1121,36 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: column;
-    margin: 0 20px 0 20px;       
+    padding: 0;
+          
   }
   
   #search
   {
     display: flex;
-    flex-direction: column;
-         
+    flex-direction: column;         
   }
   
   #h1
   {
-    margin: 40px 0 0 0;
+    margin: 40px 20px 0 20px;
     font-size: 19px;
-    display: flex;
-    justify-content: center;  
+    display: flex; 
+        
   }
   
   #text-presentation
   {
     font-size: 14px;
-    margin: 10px 0 35px 0;
+    margin: 10px 20px 35px 20px;
+    display: flex;
      
   }
  
   .button
   {
     display: flex;
-    margin: 0;
+    margin: 0 20px 0 20px;
     justify-content: center;    
   }
 
@@ -1196,24 +1204,31 @@ padding: 0 10px 0 30px;
     font-weight: bold;
     font-size: 40px;
     display: flex;
-    width: 60px;               
+    width: 60px; 
+    margin-left: -5px;              
   }
   
   /* filter */
   
   #filter
   { 
-    width: 100%; 
+    
     display: flex;
-    flex-direction: column;      
-    margin: 30px 20px 0 20px;
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+    margin: 0 20px 0 20px;      
+    
     
   }
   
   #h2
   {
     font-size: 21px;
-    margin-right: 20px;
+    margin-top: 40px;
+    display: flex;
+   
+    
   }
   
   .icon
@@ -1248,13 +1263,11 @@ padding: 0 10px 0 30px;
     border-style: none;
     background-color: white;     
     font-weight: bold;  
-    font-size: 17px;
-    justify-content: center;
-    align-items: center;
+    font-size: 17px;    
     padding-right: 15px; 
     border: #f2f2f2 solid;
     border-radius: 40px;
-    margin-top: 15px;
+    margin: 20px 10px 0 0 ;
     height: 45px;       
   }
   
@@ -1264,7 +1277,8 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: row;   
-    margin: 10px 20px 0 20px; ;
+    padding: 0;
+    margin: 20px 20px 0 20px;
   }
   
   .fa-info
@@ -1273,8 +1287,8 @@ padding: 0 10px 0 30px;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 13px 13px 0 0; 
-    border-radius: 20px 20px 20px 20px;
+     
+    border-radius: 20px;
     border-style: solid;
     width: 18px;
     height: 18px;
@@ -1290,9 +1304,8 @@ padding: 0 10px 0 30px;
   
   .container
   {
-    width: 100%;
-    display: flex;
-    
+   
+    display: flex;    
     margin-top: 40px ;  
   }
   
@@ -1337,15 +1350,13 @@ padding: 0 10px 0 30px;
   
   .hotel
   { 
-    display: flex;
-     
-    border-radius: 20px;
-    border-style: inset;
-    border-color: #f2f2f2;
+    display: flex;     
+    border-radius: 20px;    
     margin: 0 15px 0 15px;
     background-color: white;
     margin-bottom: 30px; 
-    width: 100%;      
+    width: 100%;
+    box-shadow: 0 5px 5px 5px #f2f2f2;      
   }
   
   .picture
@@ -1468,16 +1479,19 @@ padding: 0 10px 0 30px;
   
   #activity
   {
-    width:100%;
+    
     display: flex;
     flex-direction: column;
-    margin: 40px 0px 20px 0px; 
+    margin: 0; 
   }
   
   #activity-title
   {
-    margin: 0 0 5px 25px ;
-  }
+   display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 0;
+  } 
   
   #marseille
   {
@@ -1489,10 +1503,8 @@ padding: 0 10px 0 30px;
   .activity-container
   {
     border-radius: 20px;
-    border-style: inset;  
-    border-color: #f2f2f2;  
-    border-width: 3px;
-    margin: 40px 10px 40px 10px;
+    box-shadow: 0 5px 5px 5px #f2f2f2;
+    margin: 10px 10px 40px 10px;
     height: 200px;
     display: flex;
     flex-direction: column;   
@@ -1526,9 +1538,8 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
-    border-radius: 20px;    
-    border-width: 3px;
+    box-shadow: 0 5px 5px 5px #f2f2f2; 
+    border-radius: 20px;   
     margin:0;
     height:200px;
   }
@@ -1537,9 +1548,8 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
-    border-radius: 20px;    
-    border-width: 3px;
+    box-shadow: 0 5px 5px 5px #f2f2f2;
+    border-radius: 20px;        
     margin:40px 0 20px 0;
     height:200px;
   }
@@ -1548,11 +1558,10 @@ padding: 0 10px 0 30px;
   {
     display: flex;
     flex-direction: column;
-    border: inset #f2f2f2;
+    box-shadow: 0 5px 5px 5px #f2f2f2;
     border-radius: 20px;
-    height:200px;
-    border-width: 3px;
-    margin-bottom: 40px;     
+    height:200px;    
+    margin: 0 0 40px 0;     
   }
   
   /* footer*/
@@ -1563,14 +1572,15 @@ padding: 0 10px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
-    width: 100%;
-    background-color: #f2f2f2;  
+    
+    background-color: #f2f2f2; 
+    margin: 0; 
     }
   
   .footer-container
   {
-    width: 100%;
-    margin: 20px 0 40px 0;
+    
+    margin:  0;
     
   }
   .list
