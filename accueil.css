@@ -2,8 +2,7 @@
 
 body
 { 
-  font-family: "Raleway", sans-serif;
-  cursor: pointer; 
+  font-family: "Raleway", sans-serif; 
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -521,8 +520,7 @@ padding: 0 10px 0 30px;
 
   body
   { 
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
+    font-family: "Raleway", sans-serif;    
     margin: 0;
     overflow: auto;
     display: flex;
@@ -1054,9 +1052,7 @@ padding: 0 10px 0 30px;
 
   body
   { 
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;    
-         
+    font-family: "Raleway", sans-serif;         
   }
   
   /* Header */
