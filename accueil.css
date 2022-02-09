@@ -407,8 +407,7 @@ padding: 0 10px 0 30px;
 #activity
 {  
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: column; 
   margin: 80px 40px 80px 40px; 
    
 }
@@ -422,7 +421,7 @@ padding: 0 10px 0 30px;
 #marseille
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
 
 .activity-container
