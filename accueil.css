@@ -673,18 +673,19 @@ padding: 0 10px 0 30px;
   
   #filter
   {  
-    display: flex;
-    align-items: center;  
-    justify-content: space-around;
-    margin-top: 30px ;
-    flex-direction: column;
+    display: flex;      
+    justify-content: flex-start;
+    margin-top: 30px ;    
     padding-left: 40px;
+    flex-direction: column;
      
   }
   
   #h2
   {
-    font-size: 21px;   
+    font-size: 21px;
+    display: flex;
+
   }
   
   .icon
